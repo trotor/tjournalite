@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tjournalModelStoreContainer" CdmEntityContainer="tjournalEntities">
+    <EntitySetMapping Name="tj_mouse">
+      <EntityTypeMapping TypeName="tjournalModel.tj_mouse">
+        <MappingFragment StoreEntitySet="tj_mouse">
+          <ScalarProperty Name="pixels_moved" ColumnName="pixels_moved" />
+          <ScalarProperty Name="logged" ColumnName="logged" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tj_programs">
+      <EntityTypeMapping TypeName="tjournalModel.tj_programs">
+        <MappingFragment StoreEntitySet="tj_programs">
+          <ScalarProperty Name="savetime" ColumnName="savetime" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="idle" ColumnName="idle" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tj_blog">
+      <EntityTypeMapping TypeName="tjournalModel.tj_blog">
+        <MappingFragment StoreEntitySet="tj_blog">
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="MOOD" ColumnName="MOOD" />
+          <ScalarProperty Name="OCCURED" ColumnName="OCCURED" />
+          <ScalarProperty Name="CLASS" ColumnName="CLASS" />
+          <ScalarProperty Name="LINK_TO" ColumnName="LINK_TO" />
+          <ScalarProperty Name="LOGGED" ColumnName="LOGGED" />
+          <ScalarProperty Name="CONTENTS" ColumnName="CONTENTS" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
