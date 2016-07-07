@@ -11,6 +11,7 @@ Code contains some old unused parts from sqlserver times; The app needs lots of 
 ### What?
 
 ![alt tag](http://muikea.fi/tjournal/tjournal1.PNG)
+![alt tag](http://muikea.fi/tjournal/tjournal2.PNG)
 
 
 
@@ -34,7 +35,7 @@ At this point this app doesn't have proper installer. Instead...
 1. xxx
 1. Profit!
 
-## Source
+## Sourcecode
 
 Besides being ugly and unclean, it should be compileable without any problems with visual studio 2013/2015.
 
