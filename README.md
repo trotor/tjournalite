@@ -8,6 +8,12 @@ Tjournal is small application written in c# by Tero Rönkkö (tero.ronkko@gmail.
 
 Code contains some old unused parts from sqlserver times; The app needs lots of cleanup!
 
+### What?
+
+![alt tag](http://muikea.fi/tjournal/tjournal1.PNG)
+
+
+
 ## How to get started
 
 ### "Installing"
