@@ -18,12 +18,13 @@ At this point this app doesn't contain installer.
 4. add your first jopuirnal entry by pressing ctrl-n
 5. ctrl-s and alt-f4 to keep app running
 
-Additional steps
-6. Add tjournal.exe to to autostart 
-7. Keep typing like madman! 
-8. Enjoy
-9. xxx
-10. Profit!
+Additional steps for enjoying the product
+
+1. Add tjournal.exe to to autostart 
+1. Keep typing like madman! 
+1. Enjoy
+1. xxx
+1. Profit!
 
 ## Source
 
