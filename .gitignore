@@ -1,1 +1,5 @@
-src/TJournal/bin/*
+src/TJournal/bin/debug/*
+src/TJournal/bin/release/*
+src/backup/*
+src/Gma.UserActivityMonitor/bin/debug/*
+src/Gma.UserActivityMonitor/bin/Release/*
