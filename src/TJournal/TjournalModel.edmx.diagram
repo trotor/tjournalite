@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="caa33000a20741dcb2222b7b9a65119f" Name="Diagram1">
+        <EntityTypeShape EntityType="tjournalModel.tj_mouse" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="tjournalModel.tj_programs" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="tjournalModel.tj_blog" Width="1.5" PointX="4.75" PointY="0.875" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

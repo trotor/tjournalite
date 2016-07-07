@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="tjournalModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=C:\data\tjournal.sqlite" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tj_blog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CONTENTS" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="LOGGED" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="LINK_TO" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="CLASS" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="OCCURED" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="MOOD" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="USERNAME" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="tj_mouse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="logged" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="pixels_moved" Type="integer" />
+        </EntityType>
+        <EntityType Name="tj_programs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="time" Type="integer" />
+          <Property Name="idle" Type="integer" />
+          <Property Name="keys" Type="integer" />
+          <Property Name="starttime" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="savetime" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityContainer Name="tjournalModelStoreContainer">
+          <EntitySet Name="tj_blog" EntityType="Self.tj_blog" store:Type="Tables" />
+          <EntitySet Name="tj_mouse" EntityType="Self.tj_mouse" store:Type="Tables" />
+          <EntitySet Name="tj_programs" EntityType="Self.tj_programs" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="tjournalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="tjournalEntities" annotation:LazyLoadingEnabled="false">
+          <EntitySet Name="tj_mouse" EntityType="tjournalModel.tj_mouse" />
+          <EntitySet Name="tj_programs" EntityType="tjournalModel.tj_programs" />
+          <EntitySet Name="tj_blog" EntityType="tjournalModel.tj_blog" />
+        </EntityContainer>
+        <EntityType Name="tj_mouse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="logged" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="pixels_moved" Type="Int64" />
+        </EntityType>
+        <EntityType Name="tj_programs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="time" Type="Int64" />
+          <Property Name="idle" Type="Int64" />
+          <Property Name="keys" Type="Int64" />
+          <Property Name="starttime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="savetime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tj_blog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CONTENTS" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="LOGGED" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="LINK_TO" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="CLASS" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="OCCURED" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="MOOD" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="USERNAME" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="tjournalModelStoreContainer" CdmEntityContainer="tjournalEntities">
+          <EntitySetMapping Name="tj_mouse">
+            <EntityTypeMapping TypeName="tjournalModel.tj_mouse">
+              <MappingFragment StoreEntitySet="tj_mouse">
+                <ScalarProperty Name="pixels_moved" ColumnName="pixels_moved" />
+                <ScalarProperty Name="logged" ColumnName="logged" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tj_programs">
+            <EntityTypeMapping TypeName="tjournalModel.tj_programs">
+              <MappingFragment StoreEntitySet="tj_programs">
+                <ScalarProperty Name="savetime" ColumnName="savetime" />
+                <ScalarProperty Name="starttime" ColumnName="starttime" />
+                <ScalarProperty Name="keys" ColumnName="keys" />
+                <ScalarProperty Name="idle" ColumnName="idle" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tj_blog">
+            <EntityTypeMapping TypeName="tjournalModel.tj_blog">
+              <MappingFragment StoreEntitySet="tj_blog">
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="MOOD" ColumnName="MOOD" />
+                <ScalarProperty Name="OCCURED" ColumnName="OCCURED" />
+                <ScalarProperty Name="CLASS" ColumnName="CLASS" />
+                <ScalarProperty Name="LINK_TO" ColumnName="LINK_TO" />
+                <ScalarProperty Name="LOGGED" ColumnName="LOGGED" />
+                <ScalarProperty Name="CONTENTS" ColumnName="CONTENTS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

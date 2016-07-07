@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TJournal">
+</Property><Property Name="Solution File" Value="C:\Code\TJournal\TJournal.sln">
+</Property><Property Name="User Options File" Value="C:\Code\TJournal\TJournal.suo">
+</Property><Property Name="Date" Value="25. helmikuuta 2011">
+</Property><Property Name="Time" Value="10:43">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TJournal.sln" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal.sln">
+</Event><Event ErrorLevel="0" Project="" Source="TJournal.suo" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal.suo">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\TJournal.csproj" Description="Project file successfully backed up as C:\Code\TJournal\Backup\TJournal\TJournal.csproj">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Crypto.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Crypto.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\DataSet1.Designer.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\DataSet1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormMain.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormMain.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormMain.Designer.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormMain.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormProgramHistory.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormProgramHistory.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormProgramHistory.Designer.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormProgramHistory.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormSplashInformer.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormSplashInformer.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormSplashInformer.Designer.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormSplashInformer.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Hotkey.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Hotkey.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Program.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Program.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\app.config" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\app.config">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\DataSet1.xsc" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\DataSet1.xsc">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\DataSet1.xsd" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\DataSet1.xsd">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\DataSet1.xss" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\DataSet1.xss">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Properties\Settings.settings" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Icons\Systray1.ico" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Icons\Systray1.ico">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormMain.resx" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormMain.resx">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormProgramHistory.resx" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormProgramHistory.resx">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\FormSplashInformer.resx" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\FormSplashInformer.resx">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\Properties\Resources.resx" Description="File successfully backed up as C:\Code\TJournal\Backup\TJournal\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\TJournal.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TJournal" Source="TJournal\TJournal.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj" Description="Project file successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\AssemblyInfo.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\GlobalEventProvider.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\GlobalEventProvider.cs">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\HookManager.Callbacks.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\HookManager.Callbacks.cs">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\HookManager.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\HookManager.cs">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\HookManager.Structures.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\HookManager.Structures.cs">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\HookManager.Windows.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\HookManager.Windows.cs">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\MouseEventExtArgs.cs" Description="File successfully backed up as C:\Code\TJournal\Backup\Gma.UserActivityMonitor\MouseEventExtArgs.cs">
+</Event><Event ErrorLevel="1" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TJournal.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TJournal.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TJournal" Source="TJournal\TJournal.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Gma.UserActivityMonitor" Source="Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

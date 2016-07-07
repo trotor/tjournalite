@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tjournalModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=C:\data\tjournal.sqlite" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tj_blog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CONTENTS" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="LOGGED" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="LINK_TO" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="OCCURED" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="MOOD" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="tj_mouse">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="logged" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="pixels_moved" Type="integer" />
+  </EntityType>
+  <EntityType Name="tj_programs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="time" Type="integer" />
+    <Property Name="idle" Type="integer" />
+    <Property Name="keys" Type="integer" />
+    <Property Name="starttime" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="savetime" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityContainer Name="tjournalModelStoreContainer">
+    <EntitySet Name="tj_blog" EntityType="Self.tj_blog" store:Type="Tables" />
+    <EntitySet Name="tj_mouse" EntityType="Self.tj_mouse" store:Type="Tables" />
+    <EntitySet Name="tj_programs" EntityType="Self.tj_programs" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

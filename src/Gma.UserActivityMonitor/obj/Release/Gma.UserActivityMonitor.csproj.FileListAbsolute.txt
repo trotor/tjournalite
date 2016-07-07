@@ -1,0 +1,3 @@
+C:\Code\TJournal\Gma.UserActivityMonitor\bin\Release\Gma.UserActivityMonitor.dll
+C:\Code\TJournal\Gma.UserActivityMonitor\obj\Release\ResolveAssemblyReference.cache
+C:\Code\TJournal\Gma.UserActivityMonitor\obj\Release\Gma.UserActivityMonitor.dll

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tjournalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="tjournalEntities" annotation:LazyLoadingEnabled="false">
+    <EntitySet Name="tj_mouse" EntityType="tjournalModel.tj_mouse" />
+    <EntitySet Name="tj_programs" EntityType="tjournalModel.tj_programs" />
+    <EntitySet Name="tj_blog" EntityType="tjournalModel.tj_blog" />
+  </EntityContainer>
+  <EntityType Name="tj_mouse">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="logged" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="pixels_moved" Type="Int64" />
+  </EntityType>
+  <EntityType Name="tj_programs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="time" Type="Int64" />
+    <Property Name="idle" Type="Int64" />
+    <Property Name="keys" Type="Int64" />
+    <Property Name="starttime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="savetime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tj_blog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CONTENTS" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="LOGGED" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="LINK_TO" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="CLASS" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="OCCURED" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MOOD" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="USERNAME" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
