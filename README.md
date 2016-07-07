@@ -10,19 +10,21 @@ Code contains some old unused parts from sqlserver times; The app needs lots of 
 
 ## How to get started
 
-At this point this app doesn't contain installer. 
+### "Installing"
 
-1. Download via convenient method (the zip) 
+At this point this app doesn't have proper installer. Instead...
+
+1. Download TJournal via convenient method (the zip) 
 2. Copy and/or rename bin directory to your needs
 3. Run tjournal.exe 
 4. add your first jopuirnal entry by pressing ctrl-n
 5. ctrl-s and alt-f4 to keep app running
 
-Additional steps for enjoying the product
+### Additional steps to really start enjoying the product
 
 1. Add tjournal.exe to to autostart 
-1. Keep typing like madman! 
-1. Enjoy
+1. Keep typing and gathering keystrokes like madman! 
+1. Enjoy life and track your moods
 1. xxx
 1. Profit!
 
