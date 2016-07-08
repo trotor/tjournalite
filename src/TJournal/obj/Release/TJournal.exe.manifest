@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TJournal.exe" size="128896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TJournal.exe" size="128384">
       <assemblyIdentity name="TJournal" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xjCSWvBf9yjRSNXNgDkYvmi/zWHIw5xI4/b6wwiRDGg=</dsig:DigestValue>
+        <dsig:DigestValue>wRojlhS4EdVRIWxcYo3zRYBB+WehxURCuXmWCVxk/+I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

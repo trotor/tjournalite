@@ -45,8 +45,12 @@ namespace TJournal
         private int lastX = 0;
         private int lastY = 0;
         private DateTime lastMouseMove = DateTime.Now;
-
         private DateTime lastKeyboard = DateTime.Now;
+        private long totalMousePixels = 0;
+        private long totalMouseDistanceInPixels = 0;
+        private double totaMouseDistanceInMeters = 0;
+        private double totalMouseMoveDistanceInCm = 0;
+
         private int keyCount = 0;
         private int totalKeyCount = 0;
 
@@ -54,8 +58,7 @@ namespace TJournal
         private int currentIdle = 0;
         private bool isIdling = false;
         
-        private long totalMouseDistance = 0;
-
+        
         //ArrayList alPrograms = new ArrayList();
 
         Hashtable htPrograms = new Hashtable();
@@ -302,13 +305,17 @@ namespace TJournal
         {
             //lblKeycount.Text = totalKeyCount.ToString();
             tslblKeyCount.Text = totalKeyCount.ToString();
+            tslblMousePIxels.Text = totalMouseDistanceInPixels.ToString();
+            tslblCursor.Text = totaMouseDistanceInMeters.ToString() + "m";
+            //lblMouseMove.Text = totalMouseMoveDistanceInCm.ToString() + "cm";
+            tslblMouseDistance.Text = totalMouseMoveDistanceInCm.ToString() + "cm";
         }
 
-        
+
         //
-		// GetForegroundWindow API 
-		//
-		private string GetActiveWindow()
+        // GetForegroundWindow API 
+        //
+        private string GetActiveWindow()
 		{
 			
 			const int nChars = 256;
@@ -521,18 +528,15 @@ namespace TJournal
                 int dY = Y - lastY;
                 double distance = Math.Sqrt (dX * dX + dY * dY);
 
-                totalMouseDistance += (long)distance;
+                totalMouseDistanceInPixels += (long)distance;
                 lastY = Y;
                 lastX = X;
                 lastMouseMove = DateTime.Now;
-                double matka = ((double)(totalMouseDistance / 37.5) / 100);
-                matka = Math.Round( matka,2);
+                totaMouseDistanceInMeters = ((double)(totalMouseDistanceInPixels / 37.5) / 100);
+                totaMouseDistanceInMeters = Math.Round( totaMouseDistanceInMeters,2);
                 // TODO: Fix this
-                lblTotalCursorMove.Text = matka.ToString() + "m";
-                tslblCursor.Text = lblTotalCursorMove.Text;
-                double hiirimatka = Math.Round(matka * 100 / Properties.Settings.Default.MouseToCursorMultiplier, 2);
-                lblMouseMove.Text = hiirimatka.ToString() + "cm" ;
-
+                totalMouseMoveDistanceInCm = Math.Round(totaMouseDistanceInMeters * 100 / Properties.Settings.Default.MouseToCursorMultiplier, 2);
+                UpdateLabels();
             }
 
             int t = CheckIdleTime();
@@ -735,7 +739,7 @@ namespace TJournal
             string s = "insert into tronkko.tj_mouse (logged, pixels_moved) values (@logged, @pixels)";
             tj_mouse mouse = new tj_mouse();
             mouse.logged = DateTime.Now.ToString();
-            mouse.pixels_moved = totalMouseDistance;
+            mouse.pixels_moved = totalMouseDistanceInPixels;
             /*
             SQLiteCommand cmd = new SQLiteCommand(s,_con);
             cmd.Parameters.Add(new SqlParameter("logged", DateTime.Now));

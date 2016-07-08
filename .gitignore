@@ -1,5 +1,11 @@
 src/TJournal/bin/debug/*
 src/TJournal/bin/release/*
+src/TJournal/obj/debug/*
+src/TJournal/obj/release/*
+src/TJournal/bin/*
+src/TJournal/obj/*
 src/backup/*
 src/Gma.UserActivityMonitor/bin/debug/*
 src/Gma.UserActivityMonitor/bin/Release/*
+bin/tjournal.sqlite
+*.sqlite
