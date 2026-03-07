@@ -40,3 +40,20 @@ The README acknowledges the codebase needs cleanup. Key issues:
 - Commented-out SQL Server/Oracle code scattered throughout
 - No unit tests, no CI/CD
 - FormMain mixes UI logic with data access — no separation of concerns
+
+## Project Viability (assessed March 2026)
+
+**Windows modernization (.NET 10):** Viable. All core dependencies have modern equivalents:
+- WinForms: still supported on .NET 10
+- EF6 + SQLite → EF Core 10 + SQLite (straightforward migration)
+- Gma.UserActivityMonitor (custom P/Invoke hooks) → SharpHook (maintained cross-platform library)
+- P/Invoke `GetForegroundWindow` etc. → still works on .NET 10 Windows, or replaceable
+
+**macOS/Linux:** Not easy. Global input hooks and window tracking are deeply platform-specific:
+- macOS: requires Accessibility + Input Monitoring permissions, app signing, different APIs
+- Linux/Wayland: no standard API for global hooks or active window detection
+- Cross-platform adds significant complexity for a personal tool
+
+**Recommendation:** Focus on Phase 1-2 (Windows/.NET 10 + refactoring). Cross-platform (Phase 3-4) deprioritized.
+
+See `docs/MIGRATION_PLAN.md` for the full migration plan and GitHub Issues #1-#19 for tracked tasks.
