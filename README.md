@@ -1,4 +1,6 @@
-# TJournaLite
+# TJournaLite [ARCHIVED]
+
+> **This project is archived and no longer actively developed.** See [Project Viability Assessment](#project-viability-assessment-march-2026) below for details.
 
 A simple tool to keep a journal and track your computer usage, including keystrokes since installation.
 
@@ -51,7 +53,9 @@ Open `src/TJournaLite.sln` in Visual Studio 2013/2015+ and build. No additional 
 
 ### Project Viability Assessment (March 2026)
 
-**Status: Active — Windows modernization viable, cross-platform deprioritized**
+**Status: ARCHIVED — Project closed March 2026**
+
+Windows modernization was assessed as technically viable but the project has been closed. The assessment and migration plan are preserved below for reference.
 
 | Question | Answer |
 |---|---|
@@ -60,8 +64,8 @@ Open `src/TJournaLite.sln` in Visual Studio 2013/2015+ and build. No additional 
 | Can this run on Linux? | **Partially.** X11 works with SharpHook. Wayland has no standard API for global hooks or window tracking — blocked until ecosystem matures. |
 | Is the project too large to modernize? | **No.** Core logic is ~1100 lines in FormMain + ~450 lines in hook library. Phase 1 (Windows/.NET 10) and Phase 2 (refactor) are achievable. Full cross-platform (Phase 3-4) is ambitious and optional. |
 
-**Recommendation:** Proceed with Phase 1-2 (Windows modernization + refactoring). Revisit cross-platform when/if those are complete.
+**Outcome:** Project archived. Migration plan and issues preserved for reference.
 
-### Roadmap
-
-Migration to .NET 10 is planned. Cross-platform support (Avalonia UI + SharpHook) is deprioritized. See [Migration Plan](docs/MIGRATION_PLAN.md) and [Issue #1](https://github.com/trotor/tjournalite/issues/1) for details.
+- [Migration Plan](docs/MIGRATION_PLAN.md)
+- [Viability Assessment (Issue #20)](https://github.com/trotor/tjournalite/issues/20)
+- [All issues](https://github.com/trotor/tjournalite/issues)

@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Project Status
+
+**ARCHIVED — Project closed March 2026.** No active development. See viability assessment below and [Issue #20](https://github.com/trotor/tjournalite/issues/20).
+
 ## Project Overview
 
 TJournaLite is a Windows desktop application (C# / .NET Framework 4.5 / WinForms) for personal journaling and computer activity monitoring. It tracks keystrokes, mouse movement, application usage, idle time, and user mood via journal entries.
@@ -54,6 +58,6 @@ The README acknowledges the codebase needs cleanup. Key issues:
 - Linux/Wayland: no standard API for global hooks or active window detection
 - Cross-platform adds significant complexity for a personal tool
 
-**Recommendation:** Focus on Phase 1-2 (Windows/.NET 10 + refactoring). Cross-platform (Phase 3-4) deprioritized.
+**Outcome:** Project archived March 2026. Migration was viable but not pursued.
 
-See `docs/MIGRATION_PLAN.md` for the full migration plan and GitHub Issues #1-#19 for tracked tasks.
+See `docs/MIGRATION_PLAN.md` for the full migration plan. All GitHub issues (#1-#21) closed at archival.
